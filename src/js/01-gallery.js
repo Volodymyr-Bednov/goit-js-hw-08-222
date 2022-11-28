@@ -1,6 +1,6 @@
 // Add imports above this line
 import { galleryItems } from './gallery-items';
-import SimpleLightbox from 'simple-lightbox';
+import simpleLightbox from 'simplelightbox';
 
 import 'simplelightbox/dist/simple-lightbox.min.css';
 // Change code below this line
@@ -19,7 +19,7 @@ galleryItems.map(value => {
 });
 gallery.innerHTML = gItems;
 
-let lightbox = new SimpleLightbox('.gallery a', {
+let lightbox = new simpleLightbox('.gallery a', {
   captionsData: 'alt',
   captionDelay: 250,
 });
